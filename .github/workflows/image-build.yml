@@ -49,6 +49,7 @@ jobs:
           --context="${{ github.repositoryUrl }}#${{ github.ref }}#${{ github.sha }}" \
           --destination="ghcr.io/${{ github.repository }}:v$VERSION.$TAG" \
           --build-arg VERSION=$VERSION \
+          --build-arg INTERNAL_CA_CERT="$INTERNAL_CA_CERT" \
           --push-retry 3
   cleanup:
     needs:
