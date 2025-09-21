@@ -1,4 +1,4 @@
-### Container build for Juicefs
+### Container build for Juicefs with internal CA
 
 https://github.com/juicedata/juicefs
 
